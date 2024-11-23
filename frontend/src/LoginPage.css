@@ -1,0 +1,56 @@
+/* LoginPage.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .login-form {
+    background: rgba(255, 255, 255, 0.1); /* semi-transparent white */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+  }
+  
+  .login-form .L-h1 {
+    font-size: 2rem;
+    color: rgb(26, 4, 4);
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    color: rgb(41, 35, 35);
+    font-size: 1rem;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .login-form button:disabled {
+    background-color: #cccccc;
+  }
+  
+  .login-form p {
+    color: red;
+    font-size: 1rem;
+  }
+  

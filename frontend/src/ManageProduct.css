@@ -1,0 +1,128 @@
+/* Container Styles */
+.manage-products-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title Styles */
+  .manage-products-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Add Product Form Styles */
+  .add-product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-product-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .add-product-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-product-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Product List Styles */
+  .product-list {
+    display: grid;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Product Item Styles */
+  .product-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .product-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .product-price {
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  .product-stock {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 1020px) {
+    .product-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 1019px) and (min-width: 721px) {
+    .product-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 720px) and (min-width: 361px) {
+    .product-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .product-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
