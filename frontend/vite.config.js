@@ -29,7 +29,7 @@ export default defineConfig({
 
   server: { 
     proxy: { 
-      '/api': 'https://tech-backend-i020.onrender.com', 
+      '/api': 'https://tech-backend-q4s4.onrender.com', 
     },
 
   },
